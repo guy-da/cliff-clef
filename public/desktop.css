@@ -1,0 +1,168 @@
+/************************************/
+/* CSS Dokument für Screens >=640px */
+/* Date: 2016.06.09                 */
+/************************************/
+
+
+body { 
+    
+    /*background: #464939  repeat-y top center; */
+    font: 69%/1.5em 'Lucida Sans Unicode', 'Lucida Grande', verdana, arial, sans-serif; 
+    color: #333; 
+    margin: 0; 
+    padding: 0; 
+    text-align: left; 
+  
+}
+
+header
+{
+    background-color: #e1e4c7;
+    color: #fffeff;
+    height: 100px;
+    font-size: x-large;
+    font-style: italic;
+    font-weight: bolder;
+    text-align: center; 
+    margin: 0;
+	  padding-top: 15px;
+    background: #e1e4c7 url(http://oi39.tinypic.com/ke86k4.jpg)  no-repeat bottom; 
+	  
+	  /*border-bottom: 0px solid #FFF;*/   
+}
+
+
+#hilfscontainer 
+{
+    margin: 0px auto;
+    max-width: 1024px;
+}
+
+
+aside 
+{
+    float: left;
+    text-align: center;
+    width: 25%;
+    
+}
+
+
+nav
+{
+    margin: 10px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    padding-right: 5px;
+    padding-left: 5px;
+    text-align: center; 
+}
+
+
+main
+{
+    background-color: #e1e4c7;
+    margin-top: 20px;  
+    margin-bottom: 20px;  
+    color: #000000;
+    float: left;
+    width: 75%;
+    border-radius:5px; 
+}
+
+
+main h1
+{
+    font-size: xx-large;
+    margin-bottom: 10px;
+    margin-top: 0px;
+}
+
+
+article 
+{
+    border: 1px solid #8c8c8c;
+    border-radius: 5px;
+    
+    margin: 20px;
+    
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;     
+    
+    font-size: large;
+}   
+
+
+footer 
+{
+/*    background-color: #63adff;
+    
+    clear: both;
+    /* float: none; 
+    
+    color: #ffffff;
+    font-size: large;
+    font-style: italic;
+    font-weight: bolder;
+    
+    padding-top: 10px;
+    padding-bottom: 10px;
+    
+    text-align: center;
+    width: 100%;
+    */
+    font-size: x-large;
+    clear: both;
+    border-top: 0px solid #FFF;
+	  padding: 10px 15px 10px 10px;
+	  text-align: center;
+	  margin: 0;
+	  background-color: #e1e4c7;
+}                    
+
+
+img 
+{
+    border-radius: 10px;
+    
+    max-width: 100%;
+    height: auto;
+    
+}
+
+
+ul
+{
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    list-style-type: none;
+    font-size: large;
+}
+
+
+ul li a
+{
+    text-decoration: none;
+    color: #ffffff;
+    padding: 10.5px 11px; /*top right */
+    background-color: #abaf8a;
+    margin-bottom: 10px;
+    display: block;
+    border-radius:5px;   
+}
+
+
+ul li a:visited 
+{
+    color: #ffffff;
+}
+
+
+ul li a:hover, ul li.current
+{
+    color: #000000;
+    /*background-color: 7e8459;*/
+}
