@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html> 
+<head>
+		<!-- this is comment -->
+		<!-- in HEAD there are INVISIBLE things -->
+
+    <meta charset="UTF-8"/> 
+    <link media="(min-width:640px)" href="desktop.css" type="text/css" rel="stylesheet"/>
+
+    <title>
+        Hopa for friends
+    </title>
+
+    <meta name="description" content="This is a website where you can look at Hopa’s pictures or read some stories about this wonderful dog"/>
+    <meta name="keywords" content="Hopa, dog, Tetiana, pictures"/>
+    <meta name="robots" content="index, follow"/>
+
+		<meta name="author" content="M.S."/>
+
+</head>
+
+<body>
+
+	<!-- in BODY there are VISIBLE things -->
+  <header>
+			Приветствую Вас на сайте посвященном Хопе!		
+	</header> 
+  
+  <div id="hilfscontainer">
+
+	<aside>
+			<nav> <!-- navigation -->
+				<ul>  <!-- UN-ordered list -->
+            <li><a href="index.html">Main</a></li>
+            <li><a href="photos.html">Photos</a></li>
+					  <li><a href="videos.html">Videos</a></li>
+            <li><a href="stories.html">Stories</a></li>
+            <li><a href="contact.html">Contact us</a></li>
+            <li><a href="show-comments">Comments</a></li>
+
+      	</ul>
+			</nav>
+	</aside>
+
+	<main>
+     
+     <article>
+       <h1> Hello friends! </h1>
+        <div class="resultParas">
+          <p class="data_begin"></p>
+          <p class="data_main"></p>
+          <p class="data_end"></p>
+          
+        </div> 
+       <script type="text/javascript" src="members.js"></script>
+       <script>
+         //var members = require("./members");
+         //var server = require("./server");
+         
+         const data_begin = document.querySelector('.data_begin');
+         const data_end = document.querySelector('.data_end');
+         const data_main = document.querySelector('.data_main');
+         
+         data_begin.textContent = "Hello my World!"; 
+         sayNothing();
+         data_end.textContent = sayHello();
+         alert('before');
+         console.log('before members.getMembersList');
+         let rows = members.getMembersList();
+         console.log('after members.getMembersList');
+         alert('after');
+         data_main.textContent = members.prepareMembersTable(rows);
+         data_end.textContent = "Bye !"; 
+       </script>			 	
+     </article>
+
+	</main>
+
+ </div>
+
+ <footer>
+			Thank you for visiting this page!
+ </footer>
+
+</body>
+</html>
